@@ -1,0 +1,33 @@
+<div class="container">
+	
+	<small class="text-muted"> Elije la clave <i class="fa fa-user"></i></small>
+	<form ng-submit="vm.calcular()">
+
+	<select ng-model="vm.clave">
+	<option ng-value="1">Clave 1</option>
+	<option ng-value="2">Clave 2</option>
+	<option ng-value="3">Clave 3</option>
+	<option ng-value="4">Clave 4</option>
+	<option ng-value="5">Clave 5</option>
+	<option ng-value="6">Clave 6</option>
+	</select>
+
+	 <small class="text-muted">Costo de Materia Prima</small>
+	 <input type="number" ng-model="vm.mt" class="from-crontrol">
+
+
+	 <p>Costo de Produccion {{vm.cp}}</p>
+
+	 <p>Precio de venta  {{vm.pv}}</p>
+
+
+
+
+	<button type="submit" class="btn btn-info">enviar</button>
+	</form>
+
+
+
+
+
+</div>

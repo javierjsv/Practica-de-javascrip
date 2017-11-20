@@ -1,0 +1,21 @@
+<div>
+	
+	<form ng-submit="vm.calcular()">
+		<small>tiempo</small>
+		<input type="number" ng-model="vm.ti" placeholder="Digite el tiempo">
+
+		<small>Impuesto</small>
+
+		<select ng-model="vm.jornada">
+			<option  value="--">Elija dia</option>
+			<option  ng-value="0">domingo</option>
+			<option  ng-value="1">matutino</option>
+			<option  ng-value="2">verpertino</option>
+
+		</select>
+
+		<button type="submit">enviar</button>
+
+		<p class="">total:{{vm.total}}</p>
+	</form>
+</div>

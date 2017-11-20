@@ -1,0 +1,29 @@
+<div>
+	<h2>Viaje en autobus</h2>
+<form ng-submit ="vm.calcular()">
+	
+	<small>Elija el atubus</small>
+
+	<select ng-model="vm.bus">
+		<option ng-value="">ELIJE EL TIPO DE BUS</option>
+		<option ng-value="2000">TIPO A</option>
+		<option ng-value="2500">TIPO B</option>
+		<option ng-value="3000">TIPO C</option>
+	</select>
+
+	<small>Numero de kilometros</small>
+	<input type="number" ng-model="vm.km">
+
+	<small>Numero de Personas</small>
+	<input type="number" ng-model="vm.np">
+
+	
+
+	<button class="btn btn-danger">enviar</button>
+
+</form>
+<small>total a pagar</small>
+	{{vm.total}}
+</div>
+
+ 		

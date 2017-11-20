@@ -1,0 +1,23 @@
+<form class="container-fluid" ng-submit="vm.totalCon()">
+	<legend>Pan agua</legend>
+
+	<div class="form-group">
+		<label for="">metro</label>
+		<input type="number" class="form-control" ng-model="vm.a" placeholder="altura de la berca">
+
+		<label class="">largo de la berca</label>
+		<input type="number" class="form-control" ng-model="vm.l" placeholder="largo">
+
+
+		<label class="">Ancho de la berca</label>
+		<input type="number" class="form-control" ng-model="vm.n" placeholder="ancho">
+
+		<label class="">CM</label>
+		<input type="number" class="form-control" ng-model="vm.cm" placeholder="ancho">
+
+		<p class="">pago {{vm.pagos}}</p>
+
+	</div>
+	
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
